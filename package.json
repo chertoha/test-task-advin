@@ -1,0 +1,18 @@
+{
+  "name": "test-task-advin",
+  "source": "src/index.html",
+  "homepage": "https://chertoha.github.io/test-task-advin",
+  "scripts": {
+    "start": "parcel  --port 1313",
+    "build": "parcel build --public-url /test-task-advin/"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "^2.10.3",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "modern-normalize": "^2.0.0"
+  }
+}
