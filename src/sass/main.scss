@@ -1,5 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+@import './fonts';
 @import './base';
 
 h1 {
@@ -7,8 +8,8 @@ h1 {
 }
 
 .test {
-    width: 200px;
-    height: 200px;
+    width: 700px;
+    height: 700px;
     border: 5px solid red;
     padding: 30px;
 }
