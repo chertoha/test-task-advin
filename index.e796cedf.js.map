@@ -1,0 +1,1 @@
+{"mappings":"ACAA,QAAQ,GAAG,CAAC","sources":["<anon>","src/app.js"],"sourcesContent":["(function () {\nvar $3015b282b063971c$exports = {};\nconsole.log(\"hello world Parcel\");\n\n})();\n//# sourceMappingURL=index.e796cedf.js.map\n","console.log(\"hello world Parcel\");\n"],"names":["console","log"],"version":3,"file":"index.e796cedf.js.map"}
