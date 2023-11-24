@@ -1,0 +1,55 @@
+.section-hero {
+    padding-top: 15px;
+
+    @include mq('desktop') {
+
+        padding-top: 27px;
+
+    }
+}
+
+.hero {}
+
+.hero__title {
+    font-family: 'Anglecia-display';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+
+    @include mq('desktop') {
+        font-size: 72px;
+        // width: 873px;
+    }
+}
+
+.hero__meta {
+
+    margin-top: 30px;
+
+    @include mq('desktop') {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+
+}
+
+.hero__socials {}
+
+.hero__text {
+    margin-top: 30px;
+
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0.07em;
+    font-weight: 500;
+    color: $secondary-text-color;
+
+
+    @include mq('desktop') {
+        margin-left: 165px;
+        width: 560px;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+}
