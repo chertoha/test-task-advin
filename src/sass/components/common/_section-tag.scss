@@ -1,0 +1,18 @@
+.section-tag {
+    display: inline-block;
+    color: $secondary-text-color;
+    text-transform: lowercase;
+
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.1em;
+
+    @include mq('desktop') {
+        font-size: 16px;
+    }
+
+    &--rotate {
+        transform: rotate(-90deg);
+    }
+}

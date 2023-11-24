@@ -1,0 +1,12 @@
+.link {
+    cursor: pointer;
+    display: block;
+    color: inherit;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+        // color: $accent-color;
+        // border-color: $accent-color;
+    }
+}

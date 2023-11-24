@@ -1,0 +1,13 @@
+.section-title {
+
+    font-family: 'Anglecia-title';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: $secondary-text-color;
+    letter-spacing: 0.02em;
+
+    @include mq('desktop') {
+        font-size: 48px;
+    }
+}
