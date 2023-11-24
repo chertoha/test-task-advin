@@ -30,7 +30,40 @@
             +380 96 887 0 337
           </a>
         </address>
-        <form class="contacts__form"></form>
+        <form class="contacts__form form">
+          <div class="contacts__fields">
+            <input
+              class="form__field contacts__field"
+              type="text"
+              name="name"
+              placeholder="Имя *"
+            />
+            <input
+              class="form__field contacts__field"
+              type="tel"
+              name="tel"
+              placeholder="Телефон *"
+            />
+            <input
+              class="form__field contacts__field"
+              type="email"
+              name="email"
+              placeholder="E-mail *"
+            />
+            <input
+              class="form__field contacts__field"
+              type="text"
+              name="message"
+              placeholder="Сообщение"
+            />
+          </div>
+          <button type="submit">
+            отправить
+            <svg>
+              <use href="./assets/images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </div>
