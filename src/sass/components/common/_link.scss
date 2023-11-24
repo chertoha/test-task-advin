@@ -3,10 +3,11 @@
     display: block;
     color: inherit;
 
+    @include default-transition(color);
+
     &:hover,
     &:focus,
     &:focus-visible {
-        // color: $accent-color;
-        // border-color: $accent-color;
+        color: $accent-color;
     }
 }

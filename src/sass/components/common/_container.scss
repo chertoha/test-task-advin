@@ -9,7 +9,7 @@
     //     max-width: none;
     // }
 
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
 
     @include mq('desktop') {
         max-width: $desktop-viewport-width;

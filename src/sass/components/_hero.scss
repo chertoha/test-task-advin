@@ -1,1 +1,10 @@
 .hero {}
+
+.hero__title {
+
+    font-size: 36px;
+
+    @include mq('desktop') {
+        font-size: 72px;
+    }
+}

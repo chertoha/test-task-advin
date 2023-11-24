@@ -1,0 +1,36 @@
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    padding-left: 30px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -30px;
+        width: 1px;
+        height: 550px;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        @include mq('desktop') {
+            top: -40px;
+        }
+    }
+}
+
+.menu__nav {}
+
+.menu__list {}
+
+.menu__item {
+    @include set-items-margin(bottom, 20px)
+}
+
+.menu__link {
+    font-size: 16px;
+    line-height: 1.18;
+    color: $secondary-text-color;
+}
