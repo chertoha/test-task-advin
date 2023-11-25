@@ -1,1 +1,33 @@
-.about {}
+.section-about {}
+
+.about {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+.about__title {}
+
+.about__text {
+    margin: 0 auto;
+    // width: 870px;
+    font-size: 17px;
+    line-height: 1.8;
+    letter-spacing: 0.07em;
+
+    @include mq('desktop') {
+        font-size: 19px;
+    }
+}
+
+.about__paragraph {
+    width: 870px;
+}
+
+.about__paragraph+.about__paragraph {
+    margin-top: 20px;
+}
+
+.about__tag {}
