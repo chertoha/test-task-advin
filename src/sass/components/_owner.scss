@@ -7,8 +7,25 @@
 .owner {
     height: 745px;
     background-repeat: no-repeat;
-    background-image: url('../assets/images/owner/owner-desktop@1x.png');
-    background-position: 155px;
+    background-size: 315px 443px;
+    background-position: center bottom;
+    background-image: url('../assets/images/owner/owner-mobile@1x.png');
+
+    @include mq('retina') {
+        background-image: url('../assets/images/owner/owner-mobile@2x.png');
+    }
+
+    @include mq('desktop') {
+        background-size: 530px 745px;
+        background-position: 155px;
+        background-image: url('../assets/images/owner/owner-desktop@1x.png');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../assets/images/owner/owner-desktop@2x.png');
+        }
+    }
 }
 
 

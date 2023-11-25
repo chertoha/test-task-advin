@@ -12,21 +12,21 @@
 
 @mixin mq($type) {
     $mobile: $mobile-viewport-width;
-    // $tablet: $tablet-viewport-width;
+    $tablet: $tablet-viewport-width;
     // $laptop: $laptop-viewport-width;
     $desktop: $desktop-viewport-width;
 
-    // @if $type =='mobile-only' {
-    //     @media screen and (max-width: #{$tablet - 0.02}) {
-    //         @content;
-    //     }
-    // }
-
     @if $type =='mobile-only' {
-        @media screen and (max-width: #{$desktop - 0.02}) {
+        @media screen and (max-width: #{$tablet - 0.02}) {
             @content;
         }
     }
+
+    // @if $type =='mobile-only' {
+    //     @media screen and (max-width: #{$desktop - 0.02}) {
+    //         @content;
+    //     }
+    // }
 
     @if $type =='mobile' {
         @media screen and (min-width: $mobile) {
@@ -34,17 +34,23 @@
         }
     }
 
-    // @if $type =='tablet-only' {
-    //     @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+    @if $type =='tablet-only' {
+        @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+            @content;
+        }
+    }
+
+    // @if $type =='mobile-to-desktop' {
+    //     @media screen and (min-width: $mobile) and (max-width: #{$desktop - 0.02}) {
     //         @content;
     //     }
     // }
 
-    // @if $type =='tablet' {
-    //     @media screen and (min-width: $tablet) {
-    //         @content;
-    //     }
-    // }
+    @if $type =='tablet' {
+        @media screen and (min-width: $tablet) {
+            @content;
+        }
+    }
 
     // @if $type =='not-laptop' {
     //     @media screen and (max-width: #{$laptop - 0.02}) {
