@@ -1,0 +1,75 @@
+.form {
+
+    width: 100%;
+    max-width: 715px;
+    // padding-right: 155px;
+    padding-right: 0;
+
+    @include mq('tablet') {
+        // width: 715px;
+        // max-width: 715px;
+        padding-right: 0;
+
+    }
+
+
+    @include mq('desktop') {
+        width: 715px;
+        padding-right: 155px;
+    }
+}
+
+.form__field {
+    width: 100%;
+    padding-bottom: 20px;
+    display: block;
+
+    color: $secondary-text-color;
+    font-size: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+
+
+
+    @include mq('tablet') {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+
+    @include default-transition(border-color);
+    // transition: border-color 250ms $default-transition-function,
+    // color 250ms $default-transition-function;
+
+    &:hover {
+        border-color: $accent-color;
+
+    }
+
+    &::-webkit-input-placeholder,
+    &::placeholder,
+    &::-moz-placeholder {
+        color: $secondary-text-color;
+
+    }
+
+    &:focus,
+    &:focus-visible {
+        outline: none;
+        border-color: $accent-color;
+
+        &::placeholder,
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder {
+            color: $accent-color;
+        }
+    }
+
+
+}

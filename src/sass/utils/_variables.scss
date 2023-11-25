@@ -22,3 +22,6 @@ $desktop-viewport-width: 1920px;
 // $hero-top-gradient: linear-gradient(180deg, rgba(27, 27, 27, 0.5) 0%, rgba(27, 27, 27, 0) 18.09%);
 // $hero-mobile-gradient: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 // $hero-desktop-gradient: linear-gradient(to right, rgba(27, 27, 27, 0.4), rgba(27, 27, 27, 0.4));
+
+
+$default-transition-function: cubic-bezier(0.4, 0, 0.2, 1)
