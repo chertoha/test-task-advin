@@ -1,11 +1,12 @@
 @import './common/index';
 
 @import './hero-header';
-@import './header';
-@import './hero';
+@import './header/index';
+@import './hero/index';
 @import './about';
 @import './owner';
 @import './benefits';
-@import './calendar';
-@import './contacts';
-@import './footer';
+@import './calendar/index';
+@import './contacts/index';
+@import './contacts-footer';
+@import './footer/index';

@@ -1,0 +1,275 @@
+.section-benefits {}
+
+.benefits {}
+
+.benefits__header {
+
+    display: flex;
+    flex-direction: column;
+
+    @include mq('desktop') {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+
+.benefits__tag {
+    align-self: flex-end;
+
+    @include mq('desktop') {
+        align-self: flex-start;
+    }
+}
+
+
+
+.benefits__title {
+    max-width: 1180px;
+}
+
+// .benefits__wrapper {
+//     overflow: hidden;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//     width: 100%;
+//     margin-top: 40px;
+
+//     border-top: 1px solid rgba(255, 255, 255, 0.2);
+//     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+
+//     @include mq('tablet') {
+//         margin-top: 60px;
+//     }
+
+//     @include mq('desktop') {
+//         // margin-top: 60px;
+//     }
+// }
+
+// .benefits__row {
+//     display: flex;
+//     align-items: stretch;
+//     position: relative;
+//     white-space: nowrap;
+//     width: 3415px;
+
+//     @include mq('tablet') {}
+
+// }
+
+// .benefits__item-wrapper {
+//     display: flex;
+//     align-items: center;
+
+
+
+// &--1 {
+//     column-gap: 18px;
+// }
+
+// @include mq('tablet') {
+//     &--1 {
+//         margin-right: 20px;
+//     }
+// }
+
+// }
+
+// .benefits__item {
+//     display: inline-block;
+//     white-space: wrap;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.07em;
+
+//     &--w430 {
+//         width: 430px;
+
+//     }
+
+//     &--w582 {
+//         width: 582px;
+//     }
+
+//     &--w428 {
+//         width: 428px;
+//     }
+
+//     @include mq('tablet') {
+//         font-size: 16px;
+
+//         &--w430 {
+//             // margin-right: 18px;
+//         }
+
+//         &--w582 {}
+
+//         &--w428 {}
+//     }
+
+//     @include mq('desktop') {
+
+//         &--w430 {}
+
+//         &--w582 {}
+
+//         &--w428 {}
+//     }
+
+
+// }
+
+// .benefits__slash {
+//     font-family: 'Anglecia-display';
+//     font-weight: 400;
+// }
+
+// .benefits__image {
+//     // flex-shrink: 0;
+//     width: 95px;
+//     height: 120px;
+//     object-fit: cover;
+
+//     @include mq('tablet') {
+//         width: auto;
+//         height: 100px;
+//         // height: auto;
+
+//         &--1 {
+//             // margin-right: 20px;
+//         }
+//     }
+
+// @include mq('desktop') {
+//     width: auto;
+//     height: auto;
+
+// }
+// }
+
+//--------------------------------------------------------
+.benefits__wrapper {
+    // position: relative;
+    // overflow: hidden;
+}
+
+
+.benefits__row {
+    // width: 100%;
+    // width: 3415px;
+    // position: absolute;
+    // position: relative;
+    display: flex;
+    justify-content: center;
+
+    @include mq('desktop') {
+        // height: 263px;
+
+    }
+
+}
+
+.benefits__decor-wrapper {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // transform: translateX(-50%);
+
+    // display: flex;
+
+    @include mq('desktop') {
+        // column-gap: 714px;
+
+    }
+}
+
+.benefits__decor {
+    // flex-shrink: 0;
+}
+
+.benefits__slash {
+    font-family: 'Anglecia-display';
+    font-weight: 400;
+}
+
+.benefits__item {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.07em;
+
+    @include mq('desktop') {
+        font-size: 16px;
+        column-gap: 18px;
+        width: 664px;
+    }
+
+}
+
+
+.benefits__item::before,
+.benefits__item::after {
+    content: "BENEFITS /";
+    position: absolute;
+
+    white-space: nowrap;
+    font-family: 'Rawline Bold';
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.375;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.2);
+
+    @include mq('desktop') {
+        font-size: 216px;
+    }
+}
+
+.benefits__item::before {
+    top: 50%;
+    left: -200%;
+
+    transform: translateY(-50%);
+}
+
+.benefits__item::after {}
+
+
+.benefits__text {
+
+
+    &.row1 {
+        // width: 430px;
+    }
+}
+
+
+.benefits__item.row-1 {}
+
+.benefits__image {
+    display: block;
+    object-fit: cover;
+
+
+}
+
+.benefits__image.row-1 {
+    @include mq('desktop') {
+        width: 216px;
+        height: 150px;
+    }
+}

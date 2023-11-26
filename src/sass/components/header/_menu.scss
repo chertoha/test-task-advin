@@ -1,0 +1,63 @@
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+
+    padding-left: 30px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -45px;
+        width: 1px;
+        height: 550px;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        @include mq('desktop') {
+            top: -40px;
+        }
+    }
+
+    // &.is-open {
+    //     display: flex;
+    //     transform: translateX(0);
+
+    //     @include mq('mobile-only') {
+    //         right: 50%;
+    //         transform: translateX(50%);
+    //     }
+
+    // }
+
+}
+
+
+
+.menu__nav,
+.menu__select-lang {
+    display: none;
+
+    @media screen and (min-width: 900px) {
+        display: flex;
+
+    }
+}
+
+.menu__nav {}
+
+.menu__list {}
+
+.menu__select-lang {}
+
+.menu__item {
+    @include set-items-margin(bottom, 20px)
+}
+
+.menu__link {
+    font-size: 16px;
+    line-height: 1.18;
+    color: $secondary-text-color;
+}

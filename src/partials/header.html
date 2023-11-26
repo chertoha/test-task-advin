@@ -1,41 +1,49 @@
-<header class="section-header">
+<div class="section-header">
   <div class="container">
     <div class="header">
-      <a class="link logo">
+      <a class="link logo header__logo">
         <svg class="icon">
           <use href="./assets/images/icons.svg#icon-logo"></use>
         </svg>
       </a>
 
-      <div class="menu">
-        <nav class="menu__nav">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="" class="link menu__link">О нас</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="link menu__link">Участникам</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="link menu__link">Новости</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="link menu__link">Контакты</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="link menu__link">Личный кабинет</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="select">
-          <button>
-            Рус
-            <svg class="icon" width="5" height="8">
-              <use href="./assets/images/icons.svg#icon-chevron-right"></use>
-            </svg>
-          </button>
+      <div class="header__menu-wrapper">
+        <div class="menu">
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="link menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link menu__link">Участникам</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link menu__link">Новости</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link menu__link">Контакты</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link menu__link">Личный кабинет</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="select-lang menu__select-lang">
+            <button class="select-lang__button">
+              Рус
+              <svg class="icon" width="5" height="8">
+                <use href="./assets/images/icons.svg#icon-chevron-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
+
+        <button class="link burger-btn" aria-label="Open mobile menu">
+          <svg class="icon" width="30" height="30">
+            <use href="./assets/images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
-</header>
+</div>

@@ -1,0 +1,30 @@
+.footer-nav {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.07em;
+    color: $secondary-text-color;
+
+    @include mq('desktop') {
+
+
+        font-size: 16px;
+        line-height: 1.19;
+    }
+}
+
+.footer__nav {}
+
+.footer-nav__list {
+    @include mq('desktop') {
+
+        display: flex;
+        column-gap: 20px;
+
+    }
+}
+
+.footer-nav__item {
+    @include set-items-margin(bottom, 20px);
+}
+
+.footer-nav__link {}

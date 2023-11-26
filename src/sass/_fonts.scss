@@ -1,7 +1,7 @@
  @font-face {
      font-family: "Anglecia-title";
      src: local("Anglecia title"), local("Anglecia-title"),
-         url("../assets/fonts/anglecia/anglecia-pro-title-regular.otf") format("otf");
+         url("../assets/fonts/anglecia/AngleciaProTitle-Regular.woff") format("woff");
      font-weight: 400;
      font-style: normal;
      font-display: swap;
@@ -10,7 +10,7 @@
  @font-face {
      font-family: "Anglecia-display";
      src: local("Anglecia display"), local("Anglecia-display"),
-         url("../assets/fonts/anglecia/AngleciaProDisplay-Regular.otf") format("otf");
+         url("../assets/fonts/anglecia/AngleciaProDisplay-Regular.woff") format("woff");
      font-weight: 400;
      font-style: normal;
      font-display: swap;
@@ -29,7 +29,7 @@
  @font-face {
      font-family: "Anglecia-text";
      src: local("Anglecia text"), local("Anglecia-text"),
-         url("../assets/fonts/anglecia/AngleciaProTextItalic.otf") format("otf");
+         url("../assets/fonts/anglecia/AngleciaProText-Italic.woff") format("woff");
      font-weight: 400;
      font-style: italic;
      font-display: swap;

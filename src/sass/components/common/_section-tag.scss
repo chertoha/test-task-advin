@@ -2,7 +2,7 @@
     display: inline-block;
     color: $secondary-text-color;
     text-transform: lowercase;
-
+    font-size: 12px;
 
     font-size: 12px;
     line-height: 1.17;
@@ -12,7 +12,22 @@
         font-size: 16px;
     }
 
-    &--rotate {
-        transform: rotate(-90deg);
-    }
+}
+
+.section-tag--left {
+    position: absolute;
+    // left: 1em;
+    top: 0;
+
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100%);
+}
+
+.section-tag--right {
+    position: absolute;
+    right: 1em;
+    top: 0;
+
+    transform-origin: top right;
+    transform: rotate(-90deg);
 }

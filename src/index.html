@@ -24,19 +24,24 @@
     <title>Hair Institute</title>
   </head>
   <body>
-    <include src="./partials/header.html"></include>
+    <header class="hero-header">
+      <div class="hero-header__oval"></div>
+      <include src="./partials/header.html"></include>
+      <include src="./partials/hero.html"></include>
+    </header>
+
     <main>
-      <div class="hero-header">
-        <include src="./partials/hero.html"></include>
-        <include src="./partials/about.html"></include>
-      </div>
+      <include src="./partials/about.html"></include>
 
       <include src="./partials/owner.html"></include>
-      <include src="./partials/benefits.html"></include>
+      <!-- <include src="./partials/benefits.html"></include> -->
       <include src="./partials/calendar.html"></include>
-      <include src="./partials/contacts.html"></include>
     </main>
-    <include src="./partials/footer.html"></include>
+
+    <footer class="contacts-footer">
+      <include src="./partials/contacts.html"></include>
+      <include src="./partials/footer.html"></include>
+    </footer>
 
     <script type="module" src="app.js"></script>
   </body>

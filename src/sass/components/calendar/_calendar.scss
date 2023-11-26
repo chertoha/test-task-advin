@@ -1,0 +1,69 @@
+.calendar__header {
+
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 12px;
+
+    @include mq('tablet') {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+.calendar__tag {
+    align-self: flex-end;
+
+    @include mq('tablet') {
+        align-self: center;
+    }
+}
+
+
+
+.calendar__title {
+    // max-width: 1180px;
+}
+
+.calendar__grid {
+    margin-top: 40px;
+
+    @include mq('tablet') {
+        margin-top: 60px;
+    }
+}
+
+.calendar__cta-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    text-transform: uppercase;
+    color: $accent-color;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+
+    @include default-transition(text-shadow);
+
+    &:hover {
+        text-shadow: 0 0 50px rgba(110, 255, 183, 0.70);
+    }
+
+    &>.icon {
+        width: 16px;
+        width: 16px;
+    }
+
+    @include mq('desktop') {
+        font-size: 14px;
+        line-height: 1.14;
+
+    }
+
+
+
+
+
+}

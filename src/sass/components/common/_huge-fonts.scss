@@ -1,0 +1,66 @@
+.rawline-huge,
+.anglecia-display-huge,
+.anglecia-title-huge {
+    text-transform: uppercase;
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.2);
+
+    @include mq('tablet') {
+        // font-size: 150px;
+    }
+
+    @include mq('desktop') {
+        font-size: 216px;
+    }
+}
+
+.rawline-huge {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    color: transparent;
+    color: $primary-background-color;
+    // text-shadow:
+    //     -1px -1px 0 rgba(255, 255, 255, 0.2),
+    //     1px -1px 0 rgba(255, 255, 255, 0.2),
+    //     -1px 1px 0 rgba(255, 255, 255, 0.2),
+    //     1px 1px 0 rgba(255, 255, 255, 0.2);
+
+    font-family: 'Rawline Bold';
+    // font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    // color: rgba(255, 255, 255, 0.2);
+
+    @include mq('desktop') {
+        // font-size: 216px;
+    }
+}
+
+.anglecia-display-huge {
+    font-family: 'Anglecia-display';
+    // font-size: 80px;
+    letter-spacing: 0.1em;
+    // color: rgba(255, 255, 255, 0.2);
+
+    @include mq('desktop') {
+        // font-size: 216px;
+    }
+}
+
+.anglecia-title-huge {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    color: transparent;
+    // color: $primary-background-color;
+    // text-shadow:
+    //     -1px -1px 0 rgba(255, 255, 255, 0.2),
+    //     1px -1px 0 rgba(255, 255, 255, 0.2),
+    //     -1px 1px 0 rgba(255, 255, 255, 0.2),
+    //     1px 1px 0 rgba(255, 255, 255, 0.2);
+    font-family: 'Anglecia-title';
+    // font-size: 80px;
+    letter-spacing: 0.1em;
+    // color: rgba(255, 255, 255, 0.2);
+
+    @include mq('desktop') {
+        // font-size: 216px;
+    }
+}

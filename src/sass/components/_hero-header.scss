@@ -1,1 +1,153 @@
-.hero-header {}
+.hero-header {
+    position: relative;
+    padding-bottom: 240px;
+}
+
+
+.hero-header::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 120px;
+    top: 240px;
+    transform: translate(-50%, -50%) rotate(30deg);
+
+    width: 2146px;
+    height: 850px;
+
+    border-radius: 1073px/425px;
+
+    // background-color: rgba($color: #ffffff, $alpha: 0.2);
+
+    background: radial-gradient(50% 50% at 50% 50%, #29886C 0%, rgba(65, 34, 255, 0.00) 100%);
+    filter: blur(250px);
+
+
+}
+
+
+
+//grey oval
+.hero-header::after {
+    content: "";
+    position: absolute;
+
+    right: 575px;
+    top: 531px;
+    // z-index: 2;
+
+    width: 262px;
+    height: 430px;
+    transform: translate(50%, -50%) rotate(30deg);
+
+    border-radius: 298px/489px;
+
+    // background-color: tomato;
+    // background-color: transparent;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+
+
+    @include mq('laptop') {
+
+        right: 575px;
+        top: 572px;
+
+        width: 596px;
+        height: 978px;
+    }
+}
+
+
+//picture oval
+.hero-header__oval {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    // right: 575px;
+    top: 693px;
+    right: 50%;
+
+    transform: translate(50%, -50%) rotate(30deg);
+
+    overflow: hidden;
+
+    width: 262px;
+    height: 430px;
+
+
+    border-radius: 131px/215px;
+    // background-color: tomato;
+
+
+    @include mq('laptop') {
+        z-index: -1;
+        right: 575px;
+        top: 497px;
+
+        width: 596px;
+        height: 978px;
+
+        // background-color: tomato;
+        border-radius: 298px/489px;
+
+    }
+}
+
+.hero-header__oval::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -20px;
+
+    width: 313px;
+    height: 469px;
+
+    transform: rotate(-30deg);
+
+    background-repeat: no-repeat;
+    background-size: 313px 469px;
+    background-image: url('../assets/images/hero/hero-mobile@1x.jpg');
+
+    @include mq('retina') {
+        background-image: url('../assets/images/hero/hero-mobile@2x.jpg');
+    }
+
+
+    @include mq('laptop') {
+
+        top: -30px;
+        left: -50px;
+
+        width: 711px;
+        height: 1066px;
+
+        background-size: 711px 1066px;
+        background-image: url('../assets/images/hero/hero-desktop@1x.jpg');
+
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../assets/images/hero/hero-desktop@2x.jpg');
+        }
+    }
+}
+
+.hero-header__oval::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 313px;
+    height: 469px;
+
+    // background-color: tomato;
+    background-color: #2B333F;
+    mix-blend-mode: screen;
+
+
+    @include mq('laptop') {
+        display: none;
+    }
+}

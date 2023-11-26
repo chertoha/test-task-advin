@@ -1,0 +1,78 @@
+.section-header {
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    @include mq('desktop') {
+
+        // padding-top: 40px;
+        // padding-bottom: 61px;
+    }
+
+    @media screen and (min-width: 900px) {
+        padding-top: 40px;
+        padding-bottom: 61px;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    @include mq('desktop') {
+        // justify-content: flex-start;
+    }
+
+    @media screen and (min-width: 900px) {
+
+
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+.header__logo {
+    display: block;
+
+    color: $secondary-text-color;
+
+    @include mq('desktop') {
+        // margin-right: 185px;
+    }
+
+    @media screen and (min-width: 900px) {
+        margin-right: 185px;
+
+    }
+}
+
+.header__logo>.icon {
+
+    width: 213px;
+    height: 60px;
+
+
+    @media screen and (min-width: 900px) {
+        width: 405px;
+        height: 114px;
+    }
+}
+
+.header__menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    @media screen and (min-width: 900px) {
+
+        width: 100%;
+    }
+}
