@@ -1,14 +1,17 @@
 .burger-btn {
-    // color: $secondary-text-color;
-
-
-    &>.icon {
-        stroke: $secondary-text-color;
-    }
-
-
 
     @media screen and (min-width: 900px) {
         display: none;
+    }
+}
+
+
+.burger-btn>.icon {
+    stroke: $secondary-text-color;
+
+    @include default-transition(stroke);
+
+    &:hover {
+        stroke: $accent-color;
     }
 }

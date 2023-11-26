@@ -4,13 +4,13 @@
     position: relative;
     display: flex;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 20px;
 
 
 
 
     @include mq('desktop') {
-        column-gap: 20px;
+        column-gap: 30px;
         padding-left: 110px;
     }
 

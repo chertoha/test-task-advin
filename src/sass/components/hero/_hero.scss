@@ -1,11 +1,37 @@
 .section-hero {
+
+    overflow: hidden;
+
+    position: relative;
     padding-top: 15px;
 
     @include mq('desktop') {
 
         padding-top: 27px;
+        padding-bottom: 0;
+
+        height: 639px;
 
     }
+}
+
+.section-hero::before {
+    position: absolute;
+    z-index: -2;
+    content: "";
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%) rotate(30deg);
+
+    width: 1300px;
+    height: 618px;
+
+    border-radius: 650px/309px;
+    background-color: tomato;
+
+    background: radial-gradient(50% 50% at 50% 50%, #FF224A 0%, rgba(255, 34, 167, 0.00) 100%);
+    filter: blur(300px);
+
 }
 
 .hero {}
@@ -47,9 +73,34 @@
 
 
     @include mq('desktop') {
+        margin-top: 0;
         margin-left: 165px;
-        width: 560px;
+        width: 565px;
         font-size: 24px;
         line-height: 1.5;
+    }
+}
+
+
+.hero__slider-page {
+    position: absolute;
+    right: 60px;
+    bottom: 226px;
+
+    font-family: 'Anglecia-text';
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+
+    @include mq('desktop') {
+
+        right: 30px;
+        bottom: 217px;
+
+
+        font-size: 24px;
+
+
     }
 }

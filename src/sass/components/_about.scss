@@ -18,12 +18,15 @@
 
 
 .about__title {
-    margin: 0 auto;
-    max-width: 600px;
+
 
     @include mq('not-desktop') {
+        margin: 0 auto;
+        max-width: 600px;
         margin-bottom: 40px;
     }
+
+
 }
 
 .about__text {
