@@ -1,14 +1,30 @@
-.section-about {}
+.section-about {
+
+    padding-bottom: 120px;
+
+    // @include mq('desktop') {}
+}
 
 .about {
     position: relative;
-    display: flex;
-    align-items: flex-start;
+
+
+    @include mq('desktop') {
+        display: flex;
+        align-items: flex-start;
+    }
 }
 
 
 
-.about__title {}
+.about__title {
+    margin: 0 auto;
+    max-width: 600px;
+
+    @include mq('not-desktop') {
+        margin-bottom: 40px;
+    }
+}
 
 .about__text {
     margin: 0 auto;
@@ -23,11 +39,21 @@
 }
 
 .about__paragraph {
-    width: 870px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    @include mq('desktop') {
+        max-width: initial;
+        width: 870px;
+    }
 }
 
 .about__paragraph+.about__paragraph {
     margin-top: 20px;
 }
 
-.about__tag {}
+.about__tag {
+    @include mq('mobile-only') {
+        right: 0;
+    }
+}

@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
 
     padding-left: 30px;
@@ -19,11 +20,28 @@
             top: -40px;
         }
     }
+
+
+
+}
+
+
+
+.menu__nav,
+.menu__select-lang {
+    display: none;
+
+    @media screen and (min-width: 900px) {
+        display: flex;
+
+    }
 }
 
 .menu__nav {}
 
 .menu__list {}
+
+.menu__select-lang {}
 
 .menu__item {
     @include set-items-margin(bottom, 20px)

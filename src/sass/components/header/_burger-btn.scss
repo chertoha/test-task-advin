@@ -1,0 +1,14 @@
+.burger-btn {
+    // color: $secondary-text-color;
+
+
+    &>.icon {
+        stroke: $secondary-text-color;
+    }
+
+
+
+    @media screen and (min-width: 900px) {
+        display: none;
+    }
+}

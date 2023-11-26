@@ -2,10 +2,49 @@
     position: relative;
     padding-top: 0;
     padding-bottom: 0;
+
+    overflow: hidden;
+
+    @include mq('desktop') {
+        padding-top: 120px;
+
+    }
 }
 
+
+.section-owner::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 300px;
+    bottom: -150px;
+
+    width: 2806px;
+    height: 1158px;
+    transform: translate(-50%, 50%) rotate(-26deg);
+
+    border-radius: 1403px/579px;
+
+    // background-color: rgba($color: #000000, $alpha: 0.2);
+
+    // background: radial-gradient(50% 50% at 50% 50%, #22FF60 0%, rgba(65, 34, 255, 0.00) 100%);
+
+    background: radial-gradient(50% 50% at 50% 50%, #29886C 0%, rgba(65, 34, 255, 0.00) 100%);
+    filter: blur(250px);
+
+}
+
+
 .owner {
-    height: 745px;
+
+    position: relative;
+    // z-index: 2;
+
+    // overflow: hidden;
+
+
+    padding-bottom: 503px;
+
     background-repeat: no-repeat;
     background-size: 315px 443px;
     background-position: center bottom;
@@ -15,7 +54,13 @@
         background-image: url('../assets/images/owner/owner-mobile@2x.png');
     }
 
+    @include mq('tablet') {}
+
     @include mq('desktop') {
+        // padding-top: 120px;
+        padding-bottom: 0;
+        height: 745px;
+
         background-size: 530px 745px;
         background-position: 155px;
         background-image: url('../assets/images/owner/owner-desktop@1x.png');
@@ -30,13 +75,36 @@
 
 
 
-.owner__tag {}
+
+
+.owner__tag {
+
+
+    @include mq('mobile-only') {
+        right: 0;
+        top: 0;
+
+        transform-origin: top right;
+        transform: rotate(-90deg);
+    }
+}
 
 .owner__meta {
-    box-sizing: content-box;
+
     margin-left: auto;
-    padding-right: 155px;
-    max-width: 711px;
+    margin-right: auto;
+
+
+    @include mq('tablet') {
+        width: 600px;
+    }
+
+    @include mq('desktop') {
+        width: 711px;
+        margin-right: 0;
+        box-sizing: content-box;
+        padding-right: 155px;
+    }
 }
 
 
