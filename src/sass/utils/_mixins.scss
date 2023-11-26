@@ -13,8 +13,10 @@
 @mixin mq($type) {
     $mobile: $mobile-viewport-width;
     $tablet: $tablet-viewport-width;
-    // $laptop: $laptop-viewport-width;
+    $laptop: $laptop-viewport-width;
     $desktop: $desktop-viewport-width;
+
+
 
     @if $type =='mobile-only' {
         @media screen and (max-width: #{$tablet - 0.02}) {
@@ -52,17 +54,17 @@
         }
     }
 
-    // @if $type =='not-laptop' {
-    //     @media screen and (max-width: #{$laptop - 0.02}) {
-    //         @content;
-    //     }
-    // }
+    @if $type =='not-laptop' {
+        @media screen and (max-width: #{$laptop - 0.02}) {
+            @content;
+        }
+    }
 
-    // @if $type =='laptop' {
-    //     @media screen and (min-width: $laptop) {
-    //         @content;
-    //     }
-    // }
+    @if $type =='laptop' {
+        @media screen and (min-width: $laptop) {
+            @content;
+        }
+    }
 
     @if $type =='not-desktop' {
         @media screen and (max-width: #{$desktop - 0.02}) {

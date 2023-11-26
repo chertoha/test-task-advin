@@ -5,14 +5,24 @@
     position: relative;
     padding-top: 15px;
 
+    height: 972px;
+
+    @media screen and (min-width: 900px) {
+        height: 639px;
+    }
+
     @include mq('desktop') {
 
         padding-top: 27px;
         padding-bottom: 0;
 
-        height: 639px;
+        // height: 639px;
 
     }
+}
+
+.hero-container {
+    height: 100%;
 }
 
 .section-hero::before {
@@ -27,14 +37,38 @@
     height: 618px;
 
     border-radius: 650px/309px;
-    background-color: tomato;
+    // background-color: tomato;
 
     background: radial-gradient(50% 50% at 50% 50%, #FF224A 0%, rgba(255, 34, 167, 0.00) 100%);
     filter: blur(300px);
 
 }
 
-.hero {}
+.hero {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: 900px) {
+        display: block;
+    }
+
+    height: 100%;
+
+    @include mq('laptop') {
+        // display: block;
+    }
+
+}
+
+.hero__description {
+    margin-bottom: 50px;
+
+    @include mq('desktop') {
+        margin-bottom: 0;
+    }
+}
 
 .hero__title {
     font-family: 'Anglecia-display';
@@ -42,7 +76,7 @@
     font-size: 36px;
     line-height: 1.2;
 
-    @include mq('desktop') {
+    @include mq('laptop') {
         font-size: 72px;
         // width: 873px;
     }
@@ -65,6 +99,7 @@
 .hero__text {
     margin-top: 30px;
 
+
     font-size: 17px;
     line-height: 1.7;
     letter-spacing: 0.07em;
@@ -72,12 +107,18 @@
     color: $secondary-text-color;
 
 
-    @include mq('desktop') {
-        margin-top: 0;
-        margin-left: 165px;
+    @include mq('laptop') {
+        // margin-top: 0;
+        // margin-left: 165px;
         width: 565px;
         font-size: 24px;
         line-height: 1.5;
+    }
+
+    @include mq('desktop') {
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: 165px;
     }
 }
 
@@ -93,7 +134,7 @@
     line-height: 1.4;
     letter-spacing: 0.02em;
 
-    @include mq('desktop') {
+    @include mq('laptop') {
 
         right: 30px;
         bottom: 217px;
@@ -102,5 +143,16 @@
         font-size: 24px;
 
 
+    }
+}
+
+.hero__cta-btn {
+    // padding-left: 40px;
+    // padding-right: 40px;
+    justify-self: flex-end;
+    width: 319px;
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
     }
 }
