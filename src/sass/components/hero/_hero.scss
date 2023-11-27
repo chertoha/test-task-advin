@@ -4,11 +4,18 @@
 
     position: relative;
     padding-top: 15px;
+    padding-bottom: 80px;
 
     height: 972px;
 
-    @media screen and (min-width: 900px) {
+    // @media screen and (min-width: 900px) {
+    //     height: 639px;
+    // }
+
+    @include mq('laptop') {
+
         height: 639px;
+
     }
 
     @include mq('desktop') {
@@ -50,14 +57,22 @@
     flex-direction: column;
     justify-content: space-between;
 
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
     @media screen and (min-width: 900px) {
         display: block;
     }
 
     height: 100%;
 
+
+
     @include mq('laptop') {
-        // display: block;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: initial;
     }
 
 }
@@ -106,6 +121,12 @@
     font-weight: 500;
     color: $secondary-text-color;
 
+    @include mq('mobile-only') {
+
+        // max-width: ;
+
+    }
+
 
     @include mq('laptop') {
         // margin-top: 0;
@@ -125,8 +146,8 @@
 
 .hero__slider-page {
     position: absolute;
-    right: 60px;
-    bottom: 226px;
+    right: 30px;
+    bottom: 217px;
 
     font-family: 'Anglecia-text';
     font-style: italic;
@@ -136,10 +157,8 @@
 
     @include mq('laptop') {
 
-        right: 30px;
-        bottom: 217px;
-
-
+        right: 60px;
+        bottom: 226px;
         font-size: 24px;
 
 

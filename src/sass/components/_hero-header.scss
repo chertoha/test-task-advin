@@ -1,9 +1,15 @@
 .hero-header {
     position: relative;
-    padding-bottom: 240px;
+    padding-bottom: 80px;
+    overflow: hidden;
+
+    @include mq('desktop') {
+
+        padding-bottom: 240px;
+    }
 }
 
-
+//left top
 .hero-header::before {
     content: "";
     position: absolute;
@@ -22,6 +28,30 @@
     background: radial-gradient(50% 50% at 50% 50%, #29886C 0%, rgba(65, 34, 255, 0.00) 100%);
     filter: blur(250px);
 
+    @include mq('not-laptop') {
+        left: 20px;
+        top: 30px;
+        width: 1200px;
+        height: 600px;
+        border-radius: 600px/30px;
+        filter: blur(200px);
+    }
+
+    @include mq('mobile-only') {
+        left: 50px;
+        top: 50px;
+        width: 600px;
+        height: 400px;
+        border-radius: 300px/200px;
+        // background-color: tomato;
+
+        transform: translate(-50%, -50%) rotate(45deg);
+        filter: blur(50px);
+    }
+
+
+
+
 
 }
 
@@ -32,8 +62,8 @@
     content: "";
     position: absolute;
 
-    right: 575px;
-    top: 531px;
+    right: 50%;
+    top: 723px;
     // z-index: 2;
 
     width: 262px;
@@ -50,10 +80,18 @@
     @include mq('laptop') {
 
         right: 575px;
-        top: 572px;
+        top: 530px;
 
         width: 596px;
         height: 978px;
+    }
+
+    @include mq('desktop') {
+
+
+        top: 572px;
+
+
     }
 }
 

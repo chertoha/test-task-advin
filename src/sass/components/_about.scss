@@ -1,8 +1,9 @@
 .section-about {
 
     padding-bottom: 120px;
+    padding-top: 0;
 
-    // @include mq('desktop') {}
+    @include mq('desktop') {}
 }
 
 .about {
