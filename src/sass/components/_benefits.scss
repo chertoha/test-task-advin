@@ -313,13 +313,22 @@
 .benefits__row {
     // overflow: hidden;
 
+    @include mq('not-desktop') {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
     @include mq('desktop') {
         position: absolute;
         display: flex;
         align-items: center;
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
+        // left: 50%;
+        // top: 0;
+        // transform: translateX(-50%);
 
         justify-content: center;
         // width: max-content;
@@ -329,9 +338,32 @@
 
 .benefits__row--1 {
     @include mq('not-desktop') {
+        // padding-bottom: 110px;
         position: relative;
         display: flex;
         justify-content: center;
+
+    }
+
+    @include mq('desktop') {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.benefits__row--2 {
+    @include mq('not-desktop') {
+        // padding-bottom: 90px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    @include mq('desktop') {
+        top: 250px;
+        left: -1300px;
     }
 }
 
@@ -375,6 +407,22 @@
     }
 }
 
+.benefits__item--2 {
+
+
+    @include mq('not-desktop') {
+        padding-bottom: 110px;
+        max-width: 315px;
+    }
+
+
+    @include mq('desktop') {
+        flex-shrink: 0;
+        padding-left: 50px;
+
+    }
+}
+
 
 //------------IMAGE----------------//----------------------------//----------------------------//----------------------------
 
@@ -402,21 +450,18 @@
             width: 430px;
         }
     }
+
+    &--2 {
+        @include mq('desktop') {
+            width: 570px;
+        }
+    }
 }
 
 //--------------DECOR--------------//----------------------------//----------------------------//----------------------------
 
 .benefits__decor {
     flex-shrink: 0;
-
-
-}
-
-
-.benefits__decor--left,
-.benefits__decor--right {
-
-    --benefits-decor-delta: 90px;
 
     @include mq('not-desktop') {
         position: absolute;
@@ -427,17 +472,55 @@
     }
 }
 
-.benefits__decor--left {
+
+.benefits__decor--left-1,
+.benefits__decor--right-1 {
+
+    --benefits-decor-delta-1: 90px;
+
+    // @include mq('not-desktop') {
+    //     position: absolute;
+    //     bottom: 0;
+    //     // left: 0;
+
+    //     white-space: nowrap;
+    // }
+}
+
+.benefits__decor--left-1 {
 
     @include mq('not-desktop') {
-        transform: translateX(calc(-50% + var(--benefits-decor-delta)));
+        transform: translateX(calc(-50% + var(--benefits-decor-delta-1)));
     }
 }
 
-.benefits__decor--right {
+.benefits__decor--right-1 {
 
 
     @include mq('not-desktop') {
-        transform: translateX(calc(50% + 30px + var(--benefits-decor-delta)));
+        transform: translateX(calc(50% + 30px + var(--benefits-decor-delta-1)));
+    }
+}
+
+
+.benefits__decor--left-2,
+.benefits__decor--right-2 {
+
+    --benefits-decor-delta-2: 150px;
+}
+
+
+.benefits__decor--left-2 {
+
+    @include mq('not-desktop') {
+        transform: translateX(calc(-50% - var(--benefits-decor-delta-2)));
+    }
+}
+
+.benefits__decor--right-2 {
+
+
+    @include mq('not-desktop') {
+        transform: translateX(calc(50% - var(--benefits-decor-delta-2)));
     }
 }
