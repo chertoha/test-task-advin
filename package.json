@@ -4,7 +4,8 @@
   "homepage": "https://chertoha.github.io/test-task-advin",
   "scripts": {
     "start": "parcel  --port 1313",
-    "build": "parcel build --public-url /test-task-advin/"
+    "build": "parcel build --public-url /test-task-advin/",
+    "clear-cache-start": "rm -rf .parcel-cache && npm start"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.10.3",
