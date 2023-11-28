@@ -26,6 +26,7 @@
 .footer__menu {
     width: 100%;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 
     @include mq('desktop') {

@@ -1,8 +1,9 @@
-.select-lang {}
+.select-lang {
+    cursor: pointer;
+    position: relative;
+}
 
 
-
-.select-lang {}
 
 .select-lang__button {
     display: flex;
@@ -12,4 +13,30 @@
     font-weight: 500;
     font-size: 16px;
     color: $secondary-text-color;
+}
+
+
+.select-lang__list {
+    display: none;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: fit-content;
+    transform: translateY(110%);
+
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+
+    &.is-open {
+        display: block;
+    }
+}
+
+.select-lang__item {}
+
+
+
+.select-lang__link {
+    text-align: center;
+    padding: 15px;
 }
