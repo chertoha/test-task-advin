@@ -45,9 +45,9 @@
 
 
 
-
 .header__logo {
     display: block;
+    position: relative;
 
     color: $secondary-text-color;
 
@@ -64,6 +64,56 @@
         // margin-right: 185px;
     }
 }
+
+// @keyframes logoAnimation {
+//     0% {
+//         transform-origin: left;
+//         transform: scaleX(0)
+//     }
+
+//     49% {
+//         transform: scaleX(100%);
+//         transform-origin: left;
+//     }
+
+//     50% {
+//         transform: scaleX(100%);
+//         transform-origin: right;
+//     }
+
+//     100% {
+//         transform-origin: right;
+//         transform: scaleX(0);
+//     }
+// }
+
+// .header__logo::before {
+//     content: "";
+//     position: absolute;
+//     z-index: -1;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+
+//     background-color: tomato;
+//     transform-origin: left;
+//     transform: scaleX(0)
+// }
+
+// .header__logo:hover::before {
+//     animation-name: logoAnimation;
+//     animation-duration: 5000ms;
+//     animation-timing-function: $default-transition-function;
+//     animation-iteration-count: 1;
+//     animation-direction: alternate;
+// }
+
+.header__logo:hover {
+    color: #72c8e2;
+}
+
+
 
 .header__logo>.icon {
 
@@ -86,8 +136,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
-
+    padding-left: 30px;
 
     @media screen and (min-width: 900px) {
         // width: 100%;
@@ -95,5 +146,20 @@
 
     @include mq('laptop') {
         width: 100%;
+    }
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -45px;
+        width: 1px;
+        height: 550px;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        @include mq('desktop') {
+            top: -40px;
+        }
     }
 }

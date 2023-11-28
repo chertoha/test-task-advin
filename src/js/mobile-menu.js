@@ -31,7 +31,7 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", closeMenu);
 
 //on viewport change
-window.matchMedia("(min-width: 900px)").addEventListener("change", (e) => {
+window.matchMedia("(min-width: 1440px)").addEventListener("change", (e) => {
   if (!e.matches) return;
   closeMenu();
 });
