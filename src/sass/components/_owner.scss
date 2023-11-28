@@ -27,6 +27,11 @@
     background: radial-gradient(50% 50% at 50% 50%, #29886C 0%, rgba(65, 34, 255, 0.00) 100%);
     filter: blur(250px);
 
+    @supports(-webkit-touch-callout: none) {
+        filter: none;
+        -webkit-filter: none;
+    }
+
 }
 
 

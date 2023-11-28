@@ -20,9 +20,19 @@
     background: radial-gradient(50% 50% at 50% 50%, #22CAFF 0%, rgba(34, 202, 255, 0.00) 100%);
     filter: blur(250px);
 
+    @supports(-webkit-touch-callout: none) {
+        filter: none;
+        -webkit-filter: none;
+    }
+
     @include mq('mobile-only') {
         transform: translate(-50%, 50%) rotate(-30deg) scale(0.8);
         filter: blur(350px);
+
+        @supports(-webkit-touch-callout: none) {
+            filter: none;
+            -webkit-filter: none;
+        }
     }
 }
 
@@ -44,6 +54,11 @@
 
     background: radial-gradient(50% 50% at 50% 50%, #AB22FF 0%, rgba(171, 34, 255, 0.00) 100%);
     filter: blur(200px);
+
+    @supports(-webkit-touch-callout: none) {
+        filter: none;
+        -webkit-filter: none;
+    }
 
     @include mq('mobile-only') {
         transform: translate(50%, -50%) rotate(30deg) scale(0.5);
