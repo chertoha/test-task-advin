@@ -1,0 +1,22 @@
+{{#each this}}
+<div class="grid__row">
+    <div class="grid__cell">{{date}}</div>
+    <div class="grid__cell grid__cell--2 calendar__event-name">
+        {{event}}
+    </div>
+    <div class="grid__cell grid__cell--3">
+        {{description}}
+    </div>
+    <div class="grid__cell grid__cell--4">
+        <button class="calendar__cta-btn">
+            принять участие
+           
+            <svg class="icon" width="16" height="16" viewBox="0 0 24 24">
+                <path
+                    d="M24 12.179V12.821L17.8373 19L17.4545 18.5988L20.823 13.1019H0V11.8981H20.823L17.4545 6.40124L17.8373 6L24 12.179Z" />
+            </svg>
+
+        </button>
+    </div>
+</div>
+{{/each}}
