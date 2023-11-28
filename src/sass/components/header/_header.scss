@@ -86,8 +86,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
-
+    padding-left: 30px;
 
     @media screen and (min-width: 900px) {
         // width: 100%;
@@ -95,5 +96,20 @@
 
     @include mq('laptop') {
         width: 100%;
+    }
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -45px;
+        width: 1px;
+        height: 550px;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        @include mq('desktop') {
+            top: -40px;
+        }
     }
 }

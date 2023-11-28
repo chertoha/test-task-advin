@@ -5,21 +5,21 @@
     align-items: flex-start;
     width: 100%;
 
-    padding-left: 30px;
+    // padding-left: 30px;
 
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: -45px;
-        width: 1px;
-        height: 550px;
-        background-color: rgba(255, 255, 255, 0.2);
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     top: -45px;
+    //     width: 1px;
+    //     height: 550px;
+    //     background-color: rgba(255, 255, 255, 0.2);
 
-        @include mq('desktop') {
-            top: -40px;
-        }
-    }
+    //     @include mq('desktop') {
+    //         top: -40px;
+    //     }
+    // }
 
     @include mq('not-laptop') {
         overflow-y: auto;
