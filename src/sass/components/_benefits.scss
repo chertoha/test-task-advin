@@ -420,10 +420,16 @@
 
 
     @include mq('not-desktop') {
-        padding-bottom: 110px;
+        // padding-bottom: 110px;
+        padding-bottom: 150px;
         // max-width: 430px;
         max-width: 500px;
         // column-gap: 18px;
+    }
+
+
+    @include mq('mobile-only') {
+        padding-bottom: 110px;
     }
 
     @include mq('tablet') {
@@ -448,10 +454,14 @@
 
 
     @include mq('not-desktop') {
-        padding-bottom: 110px;
+        // padding-bottom: 110px;
+        padding-bottom: 150px;
         max-width: 315px;
     }
 
+    @include mq('mobile-only') {
+        padding-bottom: 110px;
+    }
 
     @include mq('desktop') {
         flex-shrink: 0;
@@ -466,8 +476,13 @@
 
 
     @include mq('not-desktop') {
-        padding-top: 110px;
+        // padding-top: 110px;
+        padding-top: 150px;
         max-width: 582px;
+    }
+
+    @include mq('mobile-only') {
+        padding-top: 110px;
     }
 
     @include mq('tablet') {
@@ -493,8 +508,13 @@
 
     @include mq('not-desktop') {
         flex-direction: row-reverse;
-        padding-bottom: 110px;
+        // padding-bottom: 110px;
+        padding-bottom: 150px;
         // max-width: 582px;
+    }
+
+    @include mq('mobile-only') {
+        padding-bottom: 110px;
     }
 
     @include mq('mobile-only') {
