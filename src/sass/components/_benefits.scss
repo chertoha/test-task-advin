@@ -17,7 +17,6 @@
 
     border-radius: 1050px/550px;
 
-    // background-color: tomato;
     background: radial-gradient(50% 50% at 50% 50%, #22CAFF 0%, rgba(34, 202, 255, 0.00) 100%);
     filter: blur(250px);
 
@@ -52,7 +51,6 @@
 }
 
 
-.benefits {}
 
 .benefits__header {
     margin-bottom: 40px;
@@ -124,7 +122,6 @@
 
 
 .benefits__row {
-    // overflow: hidden;
 
     @include mq('not-desktop') {
         margin-bottom: 20px;
@@ -139,19 +136,14 @@
         position: absolute;
         display: flex;
         align-items: center;
-        // left: 50%;
-        // top: 0;
-        // transform: translateX(-50%);
-
         justify-content: center;
-        // width: max-content;
+
     }
 }
 
 
 .benefits__row--1 {
     @include mq('not-desktop') {
-        // padding-bottom: 110px;
         position: relative;
         display: flex;
         justify-content: center;
@@ -167,7 +159,6 @@
 
 .benefits__row--2 {
     @include mq('not-desktop') {
-        // padding-bottom: 90px;
         position: relative;
         display: flex;
         justify-content: center;
@@ -182,7 +173,7 @@
 
 .benefits__row--3 {
     @include mq('not-desktop') {
-        // padding-bottom: 90px;
+
         position: relative;
         display: flex;
         justify-content: center;
@@ -198,7 +189,7 @@
 
 .benefits__row--4 {
     @include mq('not-desktop') {
-        // padding-bottom: 90px;
+
         position: relative;
         display: flex;
         justify-content: center;
@@ -217,7 +208,7 @@
 .benefits__item {
 
 
-    // white-space: wrap;
+
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.07em;
@@ -232,11 +223,9 @@
 
 
     @include mq('not-desktop') {
-        // padding-bottom: 110px;
         padding-bottom: 150px;
-        // max-width: 430px;
         max-width: 500px;
-        // column-gap: 18px;
+
     }
 
 
@@ -256,7 +245,7 @@
         padding-right: 20px;
 
         align-items: center;
-        // column-gap: 18px;
+
 
 
     }
@@ -266,7 +255,7 @@
 
 
     @include mq('not-desktop') {
-        // padding-bottom: 110px;
+
         padding-bottom: 150px;
         max-width: 315px;
     }
@@ -288,7 +277,7 @@
 
 
     @include mq('not-desktop') {
-        // padding-top: 110px;
+
         padding-top: 150px;
         max-width: 582px;
     }
@@ -320,9 +309,8 @@
 
     @include mq('not-desktop') {
         flex-direction: row-reverse;
-        // padding-bottom: 110px;
         padding-bottom: 150px;
-        // max-width: 582px;
+
     }
 
     @include mq('mobile-only') {
@@ -330,8 +318,6 @@
     }
 
     @include mq('mobile-only') {
-        // padding-top: 110px;
-        // max-width: 582px;
         flex-direction: column-reverse;
         align-items: center;
         row-gap: 30px;
@@ -421,9 +407,6 @@
 
     @include mq('not-desktop') {
         position: absolute;
-        // bottom: 0;
-        // left: 0;
-
         white-space: nowrap;
     }
 }
@@ -433,14 +416,6 @@
 .benefits__decor--right-1 {
     bottom: 0;
     --benefits-decor-delta-1: 90px;
-
-    // @include mq('not-desktop') {
-    //     position: absolute;
-    //     bottom: 0;
-    //     // left: 0;
-
-    //     white-space: nowrap;
-    // }
 }
 
 .benefits__decor--left-1 {

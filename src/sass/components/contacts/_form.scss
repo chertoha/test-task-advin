@@ -2,12 +2,9 @@
 
     width: 100%;
     max-width: 715px;
-    // padding-right: 155px;
     padding-right: 0;
 
     @include mq('tablet') {
-        // width: 715px;
-        // max-width: 715px;
         padding-right: 0;
 
     }
@@ -44,8 +41,6 @@
 
 
     @include default-transition(border-color);
-    // transition: border-color 250ms $default-transition-function,
-    // color 250ms $default-transition-function;
 
     &:hover {
         border-color: $accent-color;

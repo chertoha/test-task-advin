@@ -18,20 +18,8 @@
 
 
 .address__item-wrapper {
-    // display: flex;
-    // // align-items: center;
-    // column-gap: 20px;
-
-    // &>.icon {
-    //     display: block;
-    //     fill: $accent-color;
-    //     flex-shrink: 0;
-    // }
-
-    // align-items: flex-start;
 
     @include mq('desktop') {
-        // align-items: center;
         display: flex;
         align-items: center;
         column-gap: 20px;
@@ -41,7 +29,6 @@
 
 
 .address__map-link {
-    // padding: 5px;
     margin-top: 10px;
 
     color: rgba($color: #ffffff, $alpha: 0.5);

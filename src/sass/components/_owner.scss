@@ -24,11 +24,6 @@
     transform: translate(-50%, 50%) rotate(-26deg);
 
     border-radius: 1403px/579px;
-
-    // background-color: rgba($color: #000000, $alpha: 0.2);
-
-    // background: radial-gradient(50% 50% at 50% 50%, #22FF60 0%, rgba(65, 34, 255, 0.00) 100%);
-
     background: radial-gradient(50% 50% at 50% 50%, #29886C 0%, rgba(65, 34, 255, 0.00) 100%);
     filter: blur(250px);
 
@@ -38,11 +33,6 @@
 .owner {
 
     position: relative;
-    // z-index: 2;
-
-    // overflow: hidden;
-
-
     padding-bottom: 503px;
 
     background-repeat: no-repeat;
@@ -57,7 +47,6 @@
     @include mq('tablet') {}
 
     @include mq('desktop') {
-        // padding-top: 120px;
         padding-bottom: 0;
         height: 745px;
 
@@ -107,8 +96,6 @@
     }
 }
 
-
-.owner__title {}
 
 .owner__blackquote {
     margin: 0;

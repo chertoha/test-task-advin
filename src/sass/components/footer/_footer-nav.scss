@@ -12,7 +12,6 @@
     }
 }
 
-.footer__nav {}
 
 .footer-nav__list {
     @include mq('desktop') {
@@ -26,5 +25,3 @@
 .footer-nav__item {
     @include set-items-margin(bottom, 20px);
 }
-
-.footer-nav__link {}

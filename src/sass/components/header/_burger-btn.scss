@@ -1,9 +1,5 @@
 .burger-btn {
 
-    @media screen and (min-width: 900px) {
-        // display: none;
-    }
-
     @include mq('laptop') {
         display: none;
     }

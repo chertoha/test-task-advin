@@ -1,11 +1,5 @@
 .grid {
     width: 100%;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-
-    @include mq('mobile') {}
-
-    @include mq('tablet') {}
 }
 
 .grid__row {
@@ -26,9 +20,6 @@
     }
 }
 
-.grid__cell {
-    // border: 1px solid tomato;
-}
 
 .grid__cell--2 {
     @include mq('mobile-only') {
@@ -61,7 +52,5 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        // text-align: right;
-        // align-self: flex-end;
     }
 }

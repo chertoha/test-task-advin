@@ -7,8 +7,6 @@
     column-gap: 20px;
 
 
-
-
     @include mq('desktop') {
         column-gap: 30px;
         padding-left: 110px;
@@ -36,8 +34,6 @@
     }
 }
 
-
-.socials__item {}
 
 .socials__link {
     display: block;

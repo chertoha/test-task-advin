@@ -5,22 +5,6 @@
     align-items: flex-start;
     width: 100%;
 
-    // padding-left: 30px;
-
-    // &::before {
-    //     content: "";
-    //     position: absolute;
-    //     left: 0;
-    //     top: -45px;
-    //     width: 1px;
-    //     height: 550px;
-    //     background-color: rgba(255, 255, 255, 0.2);
-
-    //     @include mq('desktop') {
-    //         top: -40px;
-    //     }
-    // }
-
     @include mq('not-laptop') {
         overflow-y: auto;
         padding: 100px 50px 180px;
@@ -65,23 +49,11 @@
 
 .menu__nav,
 .menu__select-lang {
-    // display: none;
+
     display: flex;
 
-    @media screen and (min-width: 900px) {
-        // display: flex;
-    }
-
-    @include mq('laptop') {
-        // display: flex;
-    }
 }
 
-.menu__nav {}
-
-.menu__list {}
-
-.menu__select-lang {}
 
 .menu__item {
     @include set-items-margin(bottom, 20px);
