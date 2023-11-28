@@ -22,6 +22,11 @@
     background: radial-gradient(50% 50% at 50% 50%, #a62940 0%, rgba(255, 34, 167, 0.00) 100%);
     filter: blur(150px);
 
+    @supports(-webkit-touch-callout: none) {
+        filter: none;
+        -webkit-filter: none;
+    }
+
 
     @include mq('desktop') {
 

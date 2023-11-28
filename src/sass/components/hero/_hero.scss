@@ -49,6 +49,11 @@
     background: radial-gradient(50% 50% at 50% 50%, #FF224A 0%, rgba(255, 34, 167, 0.00) 100%);
     filter: blur(300px);
 
+    @supports(-webkit-touch-callout: none) {
+        filter: none;
+        -webkit-filter: none;
+    }
+
 }
 
 .hero {
@@ -109,7 +114,7 @@
 
 }
 
-.hero__socials {}
+
 
 .hero__text {
     margin-top: 30px;
