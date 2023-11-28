@@ -368,9 +368,16 @@
 
     &--4 {
 
+        flex-shrink: 0;
+        width: 316px;
+        height: 126px;
+        border-radius: 158px/63px;
+
         @include mq('tablet') {
-            width: 373px;
+            width: 370px;
             height: 150px;
+
+            border-radius: 180px/75px;
         }
     }
 }
