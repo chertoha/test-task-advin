@@ -8,28 +8,45 @@
       </a>
 
       <div class="header__menu-wrapper">
-        <div class="menu">
+        <div class="menu js-menu">
+          <button
+            class="link menu__close-btn js-close-menu"
+            type="button"
+            aria-label="Close mobile menu"
+          >
+            <svg class="icon" width="30" height="30">
+              <use href="./assets/images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
           <nav class="menu__nav">
-            <ul class="menu__list">
+            <ul id="js-header-nav-list" class="menu__list">
               <li class="menu__item">
-                <a href="" class="link menu__link">О нас</a>
+                <a href="" class="link menu__link js-header-nav-link">О нас</a>
               </li>
               <li class="menu__item">
-                <a href="" class="link menu__link">Участникам</a>
+                <a href="" class="link menu__link js-header-nav-link"
+                  >Участникам</a
+                >
               </li>
               <li class="menu__item">
-                <a href="" class="link menu__link">Новости</a>
+                <a href="" class="link menu__link js-header-nav-link"
+                  >Новости</a
+                >
               </li>
               <li class="menu__item">
-                <a href="" class="link menu__link">Контакты</a>
+                <a href="" class="link menu__link js-header-nav-link"
+                  >Контакты</a
+                >
               </li>
               <li class="menu__item">
-                <a href="" class="link menu__link">Личный кабинет</a>
+                <a href="" class="link menu__link js-header-nav-link"
+                  >Личный кабинет</a
+                >
               </li>
             </ul>
           </nav>
           <div class="select-lang menu__select-lang">
-            <button class="select-lang__button">
+            <button class="link select-lang__button">
               Рус
               <svg class="icon" width="5" height="8">
                 <use href="./assets/images/icons.svg#icon-chevron-right"></use>
@@ -38,7 +55,10 @@
           </div>
         </div>
 
-        <button class="link burger-btn" aria-label="Open mobile menu">
+        <button
+          class="link burger-btn js-open-menu"
+          aria-label="Open mobile menu"
+        >
           <svg class="icon" width="30" height="30">
             <use href="./assets/images/icons.svg#icon-menu"></use>
           </svg>

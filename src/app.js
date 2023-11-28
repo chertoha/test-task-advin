@@ -1,1 +1,1 @@
-console.log("hello world Parcel");
+import "./js/mobile-menu.js";
